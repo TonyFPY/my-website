@@ -54,6 +54,24 @@
       <div id="intro-text">
         <h1>Pinyuan Feng</h1>
         <p>
+        <div class="social-links">
+          <a href="https://scholar.google.com/citations?hl=en&user=XT9SDFEAAAAJ&view_op=list_works&sortby=pubdate"
+            title="Google Scholar">
+            <i class="ai ai-google-scholar"></i>
+          </a>
+          <a href="https://www.linkedin.com/in/pinyuanfeng" title="LinkedIn">
+            <i class="fab fa-linkedin"></i>
+          </a>
+          <a href="https://x.com/Pinyuan3" title="X (Twitter)">
+            <i class="fab fa-x-twitter"></i>
+          </a>
+          <a href="email.html" target="_blank" title="Email">
+            <i class="fas fa-envelope"></i>
+          </a>
+        </div>
+        </p>
+        <br>
+        <p>
           Hi! I am currently a PhD student at the
           <a href="https://zuckermaninstitute.columbia.edu/">Zuckerman Mind Brain Behavior Institute</a> at
           <a href="https://www.columbia.edu/">Columbia University</a>, working with
@@ -68,17 +86,25 @@
           the
           <a href="https://www.nottingham.ac.uk/">University of Nottingham</a>.
           I also spent a wonderful year as a Machine Learning Engineer Intern at
-          <a href="https://www.nio.com/">NIO</a>. I had the privilege of working with
-          <a href="https://thomas-serre.com/">Prof. Thomas Serre</a> and
-          <a href="https://sites.brown.edu/drewlinsley/">Dr. Drew Linsley</a> at Brown, as well as
-          <a href="https://stevebenford.com/">Prof. Steve Benford</a> and
-          <a href="https://staff.uic.edu.cn/eugenechng/en">Prof. Eugene Ch'ng</a> at Nottingham.
+          <a href="https://www.nio.com/">NIO Inc.</a>.
         </p>
-        <p>
-
         <br>
-         <div class="social-links">
-          <a href="https://scholar.google.com/citations?hl=en&user=XT9SDFEAAAAJ&view_op=list_works&sortby=pubdate" title="Google Scholar">
+        <p>
+          I had the privilege of working with
+          <a href="https://thomas-serre.com/">Prof. Thomas Serre</a> and
+          <a href="https://sites.brown.edu/drewlinsley/">Prof. Drew Linsley</a> at Brown,
+          <a href="https://stevebenford.com/">Prof. Steve Benford</a> and
+          <a href="https://staff.uic.edu.cn/eugenechng/en">Prof. Eugene Ch'ng</a> at Nottingham,
+          as well as
+          <a href="https://path.berkeley.edu/people/researchers/ching-yao-chan/">Prof. Ching-Yao Chan</a> and
+          <a href="https://its.berkeley.edu/people/yu-ke-li/">Dr. Yu-Ke Li</a> at <a
+            href="https://deepdrive.berkeley.edu/">Berkeley DeepDrive</a>.
+        </p>
+        <br>
+        <!-- <p>
+        <div class="social-links">
+          <a href="https://scholar.google.com/citations?hl=en&user=XT9SDFEAAAAJ&view_op=list_works&sortby=pubdate"
+            title="Google Scholar">
             <i class="ai ai-google-scholar"></i>
           </a>
           <a href="https://www.linkedin.com/in/pinyuanfeng" title="LinkedIn">
@@ -91,13 +117,31 @@
             <i class="fas fa-envelope"></i>
           </a>
         </div>
-        </p>
+        </p> -->
+        <br>
+        <div class="institution-logos">
+          <a href="https://www.columbia.edu/" title="Columbia University">
+            <img src="images/logo_CU.png" alt="Columbia">
+          </a>
+          <a href="https://www.brown.edu/" title="Brown University">
+            <img src="images/logo_brown.png" alt="Brown">
+          </a>
+          <a href="https://www.nottingham.ac.uk/" title="University of Nottingham">
+            <img src="images/logo_uon.png" alt="Nottingham">
+          </a>
+          <a href="https://www.berkeley.edu/" title="University of California, Berkeley">
+            <img src="images/logo_ucb.png" alt="Berkeley">
+          </a>
+          <a href="https://www.nio.com/" title="NIO Inc.">
+            <img src="images/logo_nio.png" alt="NIO">
+          </a>
+        </div>
       </div>
       <div id="intro-image">
         <img src="images/profile.jpg">
       </div>
     </div>
-
+    <br>
     <div id="filters" class="button-group">
       <!-- <button class="button" data-filter="*">Show All</button> -->
       <button class="button" data-filter=".highlight">News</button>
@@ -135,7 +179,8 @@
 
         <div class="list-item highlight" data-category="highlight">
           <p class="date"></p>
-          I received the Travel award from <a href="https://brainbodyfm-workshop.github.io/">NeurIPS 2025 BrainBodyFM Workshop</a>.
+          I received the Travel award from <a href="https://brainbodyfm-workshop.github.io/">NeurIPS 2025 BrainBodyFM
+            Workshop</a>.
         </div>
 
         <div class="list-item highlight" data-category="highlight">
@@ -155,14 +200,14 @@
 
         <div class="list-item highlight" data-category="highlight">
           <p class="date"></p>
-            I completed my bachelor's degree at the University of Nottingham. <br> <br>
+          I completed my bachelor's degree at the University of Nottingham. <br> <br>
           <p class="date"></p>
-            I graduated with First Class Honours and received the High Achievers Award.
+          I graduated with First Class Honours and received the High Achievers Award.
         </div>
 
         <div class="list-item highlight" data-category="highlight">
           <p class="date"> <b> . . .</b></p>
-          
+
         </div>
 
 
@@ -320,6 +365,22 @@
       }
 
       update_isotope();
+
+      // Add hover effect for profile image
+      $(document).ready(function () {
+        var profileImg = $('#intro-image img');
+        var originalSrc = profileImg.attr('src');
+        var hoverSrc = 'images/profile2.jpg';
+
+        profileImg.hover(
+          function () {
+            $(this).attr('src', hoverSrc);
+          },
+          function () {
+            $(this).attr('src', originalSrc);
+          }
+        );
+      });
 
     </script>
 </body>

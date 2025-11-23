@@ -135,7 +135,7 @@ h1 {
 /* Profile image and description. */
 
 #intro {
-  padding-top: 6em;
+  padding-top: 5em;
   display: flex;
 }
 
@@ -145,7 +145,7 @@ h1 {
 }
 
 #intro-image {
-  margin: 6em 0 0 1em;
+  margin: 9em 0 0 2em;
   width: 12em;
   height: 12em;
   float: left;
@@ -359,7 +359,7 @@ h3 a:hover {
     gap: 20px;
     align-items: center;
     justify-content: flex-start;
-    margin: 10px 0;
+    margin: 0px 0;
 }
 
 .social-links a {
@@ -383,5 +383,46 @@ h3 a:hover {
     
     .social-links a {
         font-size: 1.5rem;
+    }
+}
+
+
+.institution-logos {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 50px;
+    margin-top: 0px;
+    flex-wrap: wrap;
+}
+
+.institution-logos a {
+    display: inline-block;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+    border: none;
+}
+
+.institution-logos a:hover {
+    transform: scale(1.2);
+    opacity: 0.8;
+    border: none;
+}
+
+.institution-logos img {
+    height: 50px;
+    width: auto;
+    object-fit: contain;
+    transition: filter 0.1s ease;
+}
+
+/* Responsive */
+@media screen and (max-width: 600px) {
+    .institution-logos {
+        gap: 20px;
+        justify-content: center;
+    }
+    
+    .institution-logos img {
+        height: 40px;
     }
 }
