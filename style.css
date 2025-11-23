@@ -411,8 +411,11 @@ h3 a:hover {
 .institution-logos img {
     height: 50px;
     width: auto;
+    max-width: 100%; /* Add this */
+    max-height: 50px; /* Add this to enforce height limit */
     object-fit: contain;
     transition: filter 0.1s ease;
+    display: block; /* Add this */
 }
 
 /* Responsive */
@@ -424,5 +427,6 @@ h3 a:hover {
     
     .institution-logos img {
         height: 40px;
+        max-height: 40px; /* Add this */
     }
 }
