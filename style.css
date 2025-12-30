@@ -28,6 +28,10 @@ footer, header, hgroup, menu, nav, section {
 body {
   line-height: 1;
 }
+html {
+  text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
 ol, ul {
   list-style: none;
 }
@@ -359,7 +363,7 @@ h3 a:hover {
     gap: 20px;
     align-items: center;
     justify-content: flex-start;
-    margin: 0px 0;
+    margin: 0 0 0em 0;
 }
 
 .social-links a {
@@ -371,7 +375,7 @@ h3 a:hover {
 
 .social-links a:hover {
     color: rgb(20, 110, 190);
-    transform: scale(1.1);
+    transform: scale(1.2);
     border: none;
 }
 
