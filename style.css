@@ -139,7 +139,7 @@ h1 {
 /* Profile image and description. */
 
 #intro {
-  padding-top: 5em;
+  padding-top: 6em;
   display: flex;
 }
 
@@ -243,6 +243,11 @@ h2 {
   width: 3em;
   color: #a0a8b0;
 }
+
+/* .list-item.publication {
+  margin-top: 0em;     /* was 1em from .list-item */
+  margin-bottom: 1em;  /* was 0.5em from .publication */
+} */
 
 /**************************************************/
 /* Gallery of 3 preview videos. */
