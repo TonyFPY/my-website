@@ -220,6 +220,11 @@ h2 {
   padding-bottom: 6em;
 }
 
+.grid:not(.isotope-ready) .publication,
+.grid:not(.isotope-ready) .misc {
+  display: none;
+}
+
 /* clear fix */
 .grid:after {
   content: '';
