@@ -357,6 +357,42 @@ h3 a:hover {
   float: left;
 }
 
+.research-overview {
+  width: 100%;
+  float: none;
+  line-height: 1.5em;
+}
+
+.research-overview p {
+  color: #150c21;
+}
+
+.research-intro {
+  margin-bottom: 0.75em;
+}
+
+.research-directions {
+  list-style: disc;
+  margin: 0 0 1.1em;
+  padding-left: 1.5em;
+}
+
+.research-directions li {
+  margin-bottom: 0.35em;
+}
+
+.research-directions li:last-child {
+  margin-bottom: 0;
+}
+
+.research-followup {
+  margin-bottom: 0.65em;
+}
+
+.research-followup:last-child {
+  margin-bottom: 0;
+}
+
 /**************************************************/
 /* Subtle footer at the bottom of the page. */
 
